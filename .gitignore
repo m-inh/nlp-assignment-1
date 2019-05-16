@@ -1,0 +1,5 @@
+venv
+.DS_Store
+word2vec.vec
+.idea
+__pycache__
