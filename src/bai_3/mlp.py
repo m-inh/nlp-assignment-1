@@ -1,7 +1,7 @@
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import train_test_split
 
-from src.utils.load_data import load_data
+from src.load_data import load_data
 
 X, y = load_data()
 X_train, X_test, y_train, y_test = train_test_split(X, y)

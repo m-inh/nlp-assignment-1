@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-from src.utils.load_w2v import load_w2v
+from src.load_w2v import load_w2v
 
 w2v_path = "../w2v/word2vec.vec"
 vicon_noun_path = "../datasets/ViCon-400/400_noun_pairs.txt"
@@ -39,6 +39,7 @@ def load_data():
             miss_word += 1
             print("%s not found in dictionary" % w1_col[i])
 
+    print("---------------------")
     X = np.array(_X)
     y = np.array(_y)
 

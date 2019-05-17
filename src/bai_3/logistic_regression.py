@@ -1,12 +1,12 @@
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 
-from src.utils.load_data import load_data
+from src.load_data import load_data
 
 X, y = load_data()
 X_train, X_test, y_train, y_test = train_test_split(X, y)
 
-model = LogisticRegression().fit(X_train, y_train)
+model = LogisticRegression(solver="lbfgs").fit(X_train, y_train)
 
 training_score = model.score(X_train, y_train)
 test_score = model.score(X_test, y_test)

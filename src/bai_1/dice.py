@@ -12,7 +12,10 @@ def dice(v, w):
     return (2 * sum(min_arr)) / (sum(v) + sum(w))
 
 
-v = [1, 1]
-w = [1, 1, 4]
+if __name__ == "__main__":
+    v = [1, 1]
+    w = [1, 1, 4]
 
-print("dice v, w: ", dice(v, w))
+    print("v: ", v)
+    print("w: ", w)
+    print("dice v, w: ", dice(v, w))

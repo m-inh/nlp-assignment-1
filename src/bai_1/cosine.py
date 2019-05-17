@@ -19,8 +19,10 @@ def cosine(v, w):
     return dot(v, w) / (norm2(v) * norm2(w))
 
 
-v = [1, 1]
-w = [1, 1, 4]
+if __name__ == "__main__":
+    v = [1, 1, 3]
+    w = [1, 1, 4]
 
-print("dot v,w: ", dot(v, w))
-print("norm v: ", norm2(v))
+    print("v: ", v)
+    print("w: ", w)
+    print("cosine v, w: ", cosine(v, w))
